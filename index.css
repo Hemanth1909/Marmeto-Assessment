@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Outfit&display=swap');
+body {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    border: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-heading {
+    text-align: center;
+}
+
+.content-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.list-element {
+    list-style-type: none;
+    align-self: center;
+}
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+.cards-list-container {
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card-image {
+    height: 280px;
+    width: 200px;
+    border-radius: 3px;
+}
+
+.image-container{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.card-title-container {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+}
+
+.card-title {
+    max-width: 150px;
+    width: 70%;
+    font-size: 17px;
+    margin-right: 5px;
+    display: flex;
+    
+}
+.price-container {
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 90%;
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+    
+}
+.deal-price {
+    font-size: 13px;
+    margin-right: 3px;
+    font-weight: 600;
+}
+.original-price {
+    margin-right: 3px;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: grey;
+}
+.discount {
+    font-size: 13px;
+    color: red;
+}
+.cart-btn {
+    align-self: stretch;
+    background-color: black;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.top-btn{
+    width: 70%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: none;
+    font-weight: 600;
+    min-width: 70px;
+    max-width: 170px;
+    
+}
+
+.card-vendor {
+    font-size: 13px;
+}
+
+.buttons-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.current-btn {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+@media (max-width: 767px)
+{
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}

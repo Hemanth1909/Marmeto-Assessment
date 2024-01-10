@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link href="./index.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-container">
+            <h1 class="top-heading">SELECT YOUR CHOICE</h1>
+            <div class="buttons-container">
+                <!-- Buttons for filtering the data according to the user interactions -->
+                <button class="men-btn top-btn" onclick="onClickMen()" id="menBtn">Men</button>
+                <button class="women-btn top-btn" onclick="onClickWomen()" id="womenBtn">Women</button>
+                <button class="kids-btn top-btn" onclick="onClickKids()" id="kidsbtn">Kids</button>
+            </div>
+            <div class="cards-container">
+                <!-- empty list container to append all the products -->
+                <ul class="cards-list-container" id="listContainer">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./first.js" ></script>
+</body>
+</html>
