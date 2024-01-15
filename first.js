@@ -17,7 +17,7 @@ const fetchProducts = async() => {
             productsData = responseData.categories; // Store the fetched data
             // console.log(productsData)
             // Display products
-            // renderProducts(); 
+            renderProducts(); 
         } else {
             console.error('API response data is not an array:', responseData);
         }
@@ -27,10 +27,12 @@ const fetchProducts = async() => {
 }
 
 
-let currentClicked = "";
+let currentClicked = ["Men", "Women", "Kids"];
 function onClickMen() {
     onClickbtn = true;
-    currentClicked = "Men"
+    // currentClicked = "Men"
+    currentClicked = [];
+    currentClicked.push("Men");
     renderProducts()
     menBtnEl.classList.add('current-btn');
     womenBtnEl.classList.remove('current-btn');
@@ -40,7 +42,9 @@ function onClickMen() {
 function onClickWomen()
 {
     onClickbtn = true;
-    currentClicked = "Women"
+    // currentClicked = "Women"
+    currentClicked = [];
+    currentClicked.push("Women")
     renderProducts();
     menBtnEl.classList.remove('current-btn');
     womenBtnEl.classList.add('current-btn');
@@ -50,7 +54,9 @@ function onClickWomen()
 function onClickKids()
 {
     onClickbtn = true;
-    currentClicked = "Kids"
+    // currentClicked = "Kids"
+    currentClicked = [];
+    currentClicked.push("Kids")
     renderProducts();
     menBtnEl.classList.remove('current-btn');
     womenBtnEl.classList.remove('current-btn');
@@ -62,7 +68,7 @@ const renderProducts = () => {
     listContainerElement.innerHTML = ''; // Clear existing products
     productsData.forEach((product) => {
         console.log(product)
-        if(product.category_name == currentClicked)
+        if( currentClicked.includes(product.category_name))
         {
             console.log(product)
             
